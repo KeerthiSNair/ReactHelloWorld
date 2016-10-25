@@ -1,0 +1,60 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', 'react' ]
+2 info using npm@1.4.21
+3 info using node@v0.10.25
+4 verbose cache add [ 'react', null ]
+5 verbose cache add name=undefined spec="react" args=["react",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'react',
+6 verbose parsed url   path: 'react',
+6 verbose parsed url   href: 'react' }
+7 silly lockFile 6b810c90-react react
+8 verbose lock react /home/gtony0/.npm/6b810c90-react.lock
+9 silly lockFile 6b810c90-react react
+10 silly lockFile 6b810c90-react react
+11 verbose addNamed [ 'react', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 0baa5bb3-react react@
+14 verbose lock react@ /home/gtony0/.npm/0baa5bb3-react.lock
+15 silly addNameRange { name: 'react', range: '*', hasData: false }
+16 verbose request where is /react
+17 verbose request registry http://registry.npmjs.org/
+18 verbose request id ddc33f17691ee287
+19 verbose url raw /react
+20 verbose url resolving [ 'http://registry.npmjs.org/', './react' ]
+21 verbose url resolved http://registry.npmjs.org/react
+22 verbose request where is http://registry.npmjs.org/react
+23 info trying registry request attempt 1 at 17:01:30
+24 http GET http://registry.npmjs.org/react
+25 info retry will retry, error on last attempt: Error: read ECONNRESET
+26 info trying registry request attempt 2 at 17:01:40
+27 http GET http://registry.npmjs.org/react
+28 info retry will retry, error on last attempt: Error: read ECONNRESET
+29 info trying registry request attempt 3 at 17:02:40
+30 http GET http://registry.npmjs.org/react
+31 silly lockFile 0baa5bb3-react react@
+32 silly lockFile 0baa5bb3-react react@
+33 error network read ECONNRESET
+33 error network This is most likely not a problem with npm itself
+33 error network and is related to network connectivity.
+33 error network In most cases you are behind a proxy or have bad network settings.
+33 error network
+33 error network If you are behind a proxy, please make sure that the
+33 error network 'proxy' config is set properly.  See: 'npm help config'
+34 error System Linux 4.2.0-16-generic
+35 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "react"
+36 error cwd /home/gtony0/Desktop/git/trainee/ReactHelloWorld
+37 error node -v v0.10.25
+38 error npm -v 1.4.21
+39 error syscall read
+40 error code ECONNRESET
+41 error errno ECONNRESET
+42 verbose exit [ 1, true ]
