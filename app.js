@@ -32,13 +32,18 @@ webpackJsonp([0],[
 	  function HelloWorld() {
 	    _classCallCheck(this, HelloWorld);
 	
-	    _get(Object.getPrototypeOf(HelloWorld.prototype), 'constructor', this).apply(this, arguments);
+	    _get(Object.getPrototypeOf(HelloWorld.prototype), 'constructor', this).call(this);
+	    this.state = {
+	      name: ""
+	    };
 	  }
 	
 	  _createClass(HelloWorld, [{
 	    key: 'render',
 	    value: function render() {
-	      console.log("HelloWorld");
+	      var _this = this;
+	
+	      console.log("HelloWorld", this.state);
 	      return _react2['default'].createElement(
 	        'div',
 	        null,
@@ -47,11 +52,20 @@ webpackJsonp([0],[
 	          null,
 	          ' Hello World'
 	        ),
-	        _react2['default'].createElement(
+	        this.state.name.length ? null : _react2['default'].createElement(
 	          'p',
 	          null,
 	          ' Is anyone there ?'
-	        )
+	        ),
+	        _react2['default'].createElement('input', { value: this.state.name, onChange: function (e) {
+	            return _this.setState({ name: e.target.value });
+	          } }),
+	        this.state.name.length ? _react2['default'].createElement(
+	          'p',
+	          null,
+	          'Hello ',
+	          this.state.name
+	        ) : null
 	      );
 	    }
 	  }]);
@@ -62,6 +76,7 @@ webpackJsonp([0],[
 	exports.HelloWorld = HelloWorld;
 	
 	_reactDom2['default'].render(_react2['default'].createElement(HelloWorld, null), document.getElementById('main'));
+	/*  Input tag is used and onChange in value text is updated*/
 
 /***/ }
 ]);
